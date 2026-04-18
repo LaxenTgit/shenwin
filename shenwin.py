@@ -685,58 +685,66 @@ def print_help():
 # ─── MAIN ─────────────────────────────────────────────────────────────────────
 
 def main():
-    if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    # Hiç argüman girilmediyse veya yardım istendiyse
+    if len(sys.argv) < 2 or any(arg in sys.argv for arg in ("-h", "--help")):
         print(BANNER)
         print_help()
-        return
+        sys.exit(0)
 
+    # Ana parser (add_help=False diyoruz çünkü kendi yardım menümüzü kullanıyoruz)
     parser = argparse.ArgumentParser(add_help=False)
-    parser.add_argument("mode")
-    parser.add_argument("username", nargs="?", default="")
-    parser.add_argument("site", nargs="?", default="")
+    
+    # Bayrakları (flags) tanımlıyoruz
+    parser.add_argument("-w", "--whoami", dest="whoami")
+    parser.add_argument("-ww", "--wildcard", dest="wildcard")
+    parser.add_argument("-r", "--recon", dest="recon")
+    parser.add_argument("-v", "--vargen", dest="vargen")
+    parser.add_argument("-s", "--single", nargs=2, metavar=('USER', 'SITE'))
+    
+    # Seçenekleri tanımlıyoruz
     parser.add_argument("--timeout", type=int, default=8)
     parser.add_argument("--verbose", action="store_true")
-    parser.add_argument("--output", default="")
+    parser.add_argument("--output", dest="output", default="")
     parser.add_argument("--no-color", action="store_true")
-    args = parser.parse_args()
 
+    # Bilinmeyen argüman hatasını önlemek için parse_known_args kullanabiliriz
+    args, unknown = parser.parse_known_args()
+
+    # Renk ayarı
     if args.no_color:
         global R, G, Y, B, C, M, W, DG, RESET, BOLD
         R = G = Y = B = C = M = W = DG = RESET = BOLD = ""
 
     print(BANNER)
 
-    if not args.username:
-        args.username = input(f"{Y}[?] Hedef username: {RESET}").strip()
-        if not args.username:
-            print(f"{R}[!] Username boş olamaz.{RESET}")
-            return
+    try:
+        # Hangi modun aktif olduğunu kontrol et
+        if args.whoami:
+            mode_whoami(username=args.whoami, timeout=args.timeout, verbose=args.verbose, output=args.output)
+        
+        elif args.wildcard:
+            mode_wildcard(username=args.wildcard, timeout=args.timeout, verbose=args.verbose, output=args.output)
+        
+        elif args.recon:
+            mode_recon(username=args.recon, timeout=args.timeout, verbose=args.verbose, output=args.output)
+        
+        elif args.vargen:
+            mode_vargen(username=args.vargen)
+        
+        elif args.single:
+            # args.single bir liste döndürür: [username, site]
+            mode_single(username=args.single[0], site=args.single[1], timeout=args.timeout)
+            
+        else:
+            # Eğer hiçbiri yoksa ama argüman varsa (hatalı kullanım)
+            print(f"{R}[!] Hatalı parametre kullanımı.{RESET}")
+            print_help()
 
-    mode_map = {
-        "-w": mode_whoami, "--whoami": mode_whoami,
-        "-ww": mode_wildcard, "--wildcard": mode_wildcard,
-        "-r": mode_recon, "--recon": mode_recon,
-        "-v": mode_vargen, "--vargen": mode_vargen,
-        "-s": mode_single, "--single": mode_single,
-    }
-
-    fn = mode_map.get(args.mode)
-    if not fn:
-        print(f"{R}[!] Bilinmeyen mod: {args.mode}{RESET}")
-        print_help()
-        return
-
-    if args.mode in ("-s", "--single") and not args.site:
-        args.site = input(f"{Y}[?] Platform: {RESET}").strip()
-
-    fn(
-        username=args.username,
-        timeout=args.timeout,
-        verbose=args.verbose,
-        output=args.output,
-        site=args.site,
-    )
-
+    except KeyboardInterrupt:
+        print(f"\n\n{R}[!] İşlem kullanıcı tarafından durduruldu.{RESET}")
+        sys.exit(130)
+    except Exception as e:
+        print(f"\n{R}[!] Beklenmedik hata: {e}{RESET}")
 
 if __name__ == "__main__":
     main()
