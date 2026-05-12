@@ -1,0 +1,86 @@
+whoami@kalilinux:~$ python3 test.py -w latent
+
+╔═════════════════════════════════════════════════════════════  ═╗
+║                                                                   ║                                                                                                 
+║   ███████╗██╗  ██╗███████╗███╗   ██╗██╗    ██╗██╗███╗   ██╗ ║                                                                                                       
+║   ██╔════╝██║  ██║██╔════╝████╗  ██║██║    ██║██║████╗  ██║ ║                                                                                                       
+║   ███████╗███████║█████╗  ██╔██╗ ██║██║ █╗ ██║██║██╔██╗ ██║ ║                                                                                                       
+║   ╚════██║██╔══██║██╔══╝  ██║╚██╗██║██║███╗██║██║██║╚██╗██║ ║                                                                                                       
+║   ███████║██║  ██║███████╗██║ ╚████║╚███╔███╔╝██║██║ ╚████║ ║                                                                                                       
+║   ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ║                                                                                                       
+║                                                                   ║                                                                                                 
+║   v0.01  |  OSINT Username & Variation Hunter  |  by Miraç ║                                                                                                        
+╚══════════════════════════════════════════════════════════════╝                                                                                                      
+
+
+┌─ [WHOAMI MODE] ─────────────────────────────────────────────
+│  Hedef   : latent                                                                                                                                                   
+│  Platform: 296                                                                                                                                                      
+└──────────────────────────────────────────────────────────                                                                                                           
+
+⠸ Tarıyor: latent  [296 platform]    [✓] Instagram              https://www.instagram.com/latent/ (305ms)
+⠼ Tarıyor: latent  [296 platform]    [✓] Twitch                 https://www.twitch.tv/latent (230ms)
+⠴ Tarıyor: latent  [296 platform]    [✓] TikTok                 https://www.tiktok.com/@latent (414ms)
+⠦ Tarıyor: latent  [296 platform]    [✓] Minds                  https://www.minds.com/latent (294ms)
+⠧ Tarıyor: latent  [296 platform]    [✓] Kick                   https://kick.com/latent (478ms)
+  [✓] Pinterest              https://www.pinterest.com/latent/ (581ms)
+⠋ Tarıyor: latent  [296 platform]    [✓] BeReal                 https://bere.al/latent (500ms)
+  [✓] Mastodon               https://mastodon.social/@latent (750ms)
+  [✓] Quora                  https://www.quora.com/profile/latent (714ms)
+⠙ Tarıyor: latent  [296 platform]    [✓] Hashnode               https://hashnode.com/@latent (598ms)
+  [✓] Plurk                  https://www.plurk.com/latent (655ms)
+⠹ Tarıyor: latent  [296 platform]    [✓] Snapchat               https://www.snapchat.com/add/latent (965ms)
+  [✓] Wordpress              https://latent.wordpress.com (771ms)
+  [✓] PyPI                   https://pypi.org/user/latent/ (371ms)
+⠼ Tarıyor: latent  [296 platform]    [✓] Substack               https://latent.substack.com (917ms)
+⠦ Tarıyor: latent  [296 platform]    [✓] TryHackMe              https://tryhackme.com/p/latent (334ms)
+⠋ Tarıyor: latent  [296 platform]    [✓] Steam                  https://steamcommunity.com/id/latent (569ms)
+⠙ Tarıyor: latent  [296 platform]    [✓] GitLab                 https://gitlab.com/latent (1190ms)
+⠼ Tarıyor: latent  [296 platform]    [✓] Chess.com              https://www.chess.com/member/latent (818ms)
+⠦ Tarıyor: latent  [296 platform]    [✓] Bluesky                https://bsky.app/profile/latent.bsky.social (1817ms)
+  [✓] Leetify                https://leetify.com/app/profile/latent (921ms)
+⠧ Tarıyor: latent  [296 platform]    [✓] Game Jolt              https://gamejolt.com/@latent (912ms)
+⠇ Tarıyor: latent  [296 platform]    [✓] RootMe                 https://www.root-me.org/latent (1274ms)
+⠏ Tarıyor: latent  [296 platform]    [✓] Dailymotion            https://www.dailymotion.com/latent (705ms)
+  [✓] Reddit                 https://www.reddit.com/user/latent (2304ms)
+⠹ Tarıyor: latent  [296 platform]    [✓] BitChute               https://www.bitchute.com/channel/latent (915ms)
+  [✓] GOG                    https://www.gog.com/u/latent (1338ms)
+  [✓] Vimeo                  https://vimeo.com/latent (1038ms)
+⠏ Tarıyor: latent  [296 platform]    [✓] Musixmatch             https://www.musixmatch.com/profile/latent (1645ms)
+  [✓] Livejournal            https://latent.livejournal.com (2967ms)
+  [✓] ReverbNation           https://www.reverbnation.com/latent (1707ms)
+⠋ Tarıyor: latent  [296 platform]    [✓] ORCID                  https://orcid.org/latent (2325ms)
+  [✓] Codecademy             https://www.codecademy.com/profiles/latent (928ms)
+  [✓] Codewars               https://www.codewars.com/users/latent (928ms)
+⠹ Tarıyor: latent  [296 platform]    [✓] Thingiverse            https://www.thingiverse.com/latent (1553ms)
+  [✓] Mirror.xyz             https://mirror.xyz/latent (1385ms)
+⠼ Tarıyor: latent  [296 platform]    [✓] Venmo                  https://venmo.com/u/latent (775ms)
+  [✓] ProductHunt            https://www.producthunt.com/@latent (1150ms)
+  [✓] HackerRank             https://www.hackerrank.com/latent (1281ms)
+  [✓] AniList                https://anilist.co/user/latent (467ms)
+⠴ Tarıyor: latent  [296 platform]    [✓] Mewe                   https://mewe.com/i/latent (3311ms)
+  [✓] Odysee                 https://odysee.com/@latent (2027ms)
+  [✓] Urban Dictionary       https://www.urbandictionary.com/author.php?author=latent (1441ms)
+  [✓] Grailed                https://www.grailed.com/latent (638ms)
+⠦ Tarıyor: latent  [296 platform]    [✓] Simkl                  https://simkl.com/latent (430ms)
+  [✓] AtCoder                https://atcoder.jp/users/latent (1319ms)
+  [✓] Anime-Planet           https://www.anime-planet.com/users/latent (553ms)
+  [✓] Crunchyroll            https://www.crunchyroll.com/user/latent (535ms)
+⠧ Tarıyor: latent  [296 platform]    [✓] Kitsu                  https://kitsu.io/users/latent (617ms)
+  [✓] Cults3D                https://cults3d.com/en/users/latent (1945ms)
+  [✓] Spotify                https://open.spotify.com/user/latent (2435ms)
+⠏ Tarıyor: latent  [296 platform]    [✓] OpenSea                https://opensea.io/latent (630ms)
+  [✓] SoundCloud             https://soundcloud.com/latent (2580ms)
+⠋ Tarıyor: latent  [296 platform]    [✓] MyAnimeList            https://myanimelist.net/profile/latent (904ms)
+⠙ Tarıyor: latent  [296 platform]    [✓] Poshmark               https://poshmark.com/closet/latent (1128ms)
+⠹ Tarıyor: latent  [296 platform]    [✓] eBay                   https://www.ebay.com/usr/latent (1233ms)
+⠸ Tarıyor: latent  [296 platform]    [✓] Battlefy               https://battlefy.com/users/latent (3103ms)
+⠼ Tarıyor: latent  [296 platform]    [✓] PayPal.me              https://www.paypal.me/latent (1611ms)
+⠴ Tarıyor: latent  [296 platform]    [✓] Disqus                 https://disqus.com/by/latent/ (2359ms)
+⠇ Tarıyor: latent  [296 platform]    [✓] Behance                https://www.behance.net/latent (2897ms)
+  [✓] Sketchfab              https://sketchfab.com/latent (2865ms)
+⠏ Tarıyor: latent  [296 platform]    [✓] Zora                   https://zora.co/latent (1421ms)
+⠋ Tarıyor: latent  [296 platform]  ^C
+
+[!] İşlem kullanıcı tarafından durduruldu.
+whoami@kalilinux:~$ clear
