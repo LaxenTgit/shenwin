@@ -1,1 +1,41 @@
+whoami@kalilinux:~/shenwin$ python3 shenwin.py
 
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ███████╗██╗  ██╗███████╗███╗   ██╗██╗    ██╗██╗███╗   ██╗ ║
+║   ██╔════╝██║  ██║██╔════╝████╗  ██║██║    ██║██║████╗  ██║ ║
+║   ███████╗███████║█████╗  ██╔██╗ ██║██║ █╗ ██║██║██╔██╗ ██║ ║
+║   ╚════██║██╔══██║██╔══╝  ██║╚██╗██║██║███╗██║██║██║╚██╗██║ ║
+║   ███████║██║  ██║███████╗██║ ╚████║╚███╔███╔╝██║██║ ╚████║ ║
+║   ╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═══╝ ╚══╝╚══╝ ╚═╝╚═╝  ╚═══╝ ║
+║                                                              ║
+║   v0.01  |  OSINT Username & Variation Hunter  |  by Miraç  ║
+╚══════════════════════════════════════════════════════════════╝
+
+
+    (\ /)
+    ( . .)  S H E N W I N
+    c(")(")   OSINT Username Hunter
+     |   |
+    _|___|_
+
+KULLANIM:
+  shenwin -w  <username>          # Whoami: 296 platformda ara
+  shenwin -ww <username>          # Wildcard: varyasyonlarla tara
+  shenwin -r  <username>          # Recon: hacker/dev platformları
+  shenwin -v  <username>          # Vargen: sadece varyasyon listele
+  shenwin -s  <username> <site>   # Single: tek platformda ara
+
+SEÇENEKLER:
+  --timeout N    # HTTP zaman aşımı (varsayılan: 8s)
+  --verbose      # 404'leri de göster
+  --output FILE  # Sonuçları .txt olarak kaydet
+  --no-color     # Renksiz çıktı
+
+ÖRNEKLER:
+  $ python3 shenwin.py -w mirac
+  $ python3 shenwin.py -ww mirac --output sonuc.txt
+  $ python3 shenwin.py -r elliot --verbose
+  $ python3 shenwin.py -s mirac github
+
+whoami@kalilinux:~/shenwin$ 
